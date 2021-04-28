@@ -1,0 +1,55 @@
+<div id ="reg">
+    <span> Region </span>
+    <mat-form-field appearance="fill">
+        <mat-label>Select </mat-label>
+        <mat-select disableRipple>
+          <mat-option value="1">Valparaiso</mat-option>
+          <mat-option value="2">Metropolitana</mat-option>
+          <mat-option value="3">BioBio</mat-option>
+          <mat-option value="4">Araucania</mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>
+<div id="clim">
+  <li>seleccione clima</li>>
+  <mat-radio-group class = "grupoClima" [(ngModel)] = "select1">
+    <mat-radio-button class = "grupoBoton"
+       *ngFor = "let clm of clm" [value] = "clm">
+       {{clm}}
+    </mat-radio-button>
+ </mat-radio-group>
+ <div class = "seleccionado">
+    clima seleccionado: {{select1}}
+ </div>
+</div>
+<div id ="dia">
+  <span> Dia </span>
+  <mat-form-field appearance="fill">
+      <mat-label>Select </mat-label>
+      <mat-select disableRipple>
+        <mat-option value="1">lunes</mat-option>
+        <mat-option value="2">martes</mat-option>
+        <mat-option value="3">miercoles</mat-option>
+        <mat-option value="4">jueves</mat-option>
+        <mat-option value="5">viernes</mat-option>
+        <mat-option value="6">sabado</mat-option>
+        <mat-option value="7">domingo</mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>
+
+
+<div id="tem">
+  <li>Temperatura</li>>
+  <mat-radio-group class = "grupoClima" [(ngModel)] = "select2">
+    <mat-radio-button class = "grupoBoton"
+       *ngFor = "let tm of tm" [value] = "tm">
+       {{tm}}
+    </mat-radio-button>
+ </mat-radio-group>
+ <div class = "seleccionado">
+    clima seleccionado: {{select2}}
+ </div>
+</div>
+
+<a [routerLink]="['/']" routerLinkActive="router-link-active"> <button type="submit">actualizar</button> </a>

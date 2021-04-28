@@ -1,0 +1,52 @@
+<nav>
+
+    <span>Metropolitana</span>
+
+        <div id="inf">
+    
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">   <button mat-button >lunes</button> </a>
+            <img src="/assets/img/img1.jpg"> 
+            <p>{{item.grados1}}</p>
+            <p>{{item.clima1}}</p>
+        </li>
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">   <button mat-button >martes</button> </a>
+            <img src="/assets/img/img3.jpg"> 
+            <p>{{item.grados2}}</p>
+            <p>{{item.clima2}}</p>
+        </li>
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">  <button mat-button >miercoles</button> </a>
+            <img src="/assets/img/img2.jpg"> 
+            <p>{{item.grados3}}</p>
+            <p>{{item.clima3}}</p>
+        </li>
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">   <button mat-button >jueves</button> </a>
+            <img src="/assets/img/img4.jpg"> 
+            <p>{{item.grados4}}</p>
+            <p>{{item.clima4}}</p>
+        </li>
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">   <button mat-button >viernes</button> </a>
+            <img src="/assets/img/img1.jpg"> 
+            <p>{{item.grados5}}</p>
+            <p>{{item.clima5}}</p>
+        </li>
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">  <button mat-button >sabado</button> </a>
+            <img src="/assets/img/img3.jpg"> 
+            <p>{{item.grados6}}</p>
+            <p>{{item.clima6}}</p>
+        </li>
+        <li *ngFor="let item of Lista" >
+            <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">   <button mat-button >domingo</button> </a>
+            <img src="/assets/img/img4.jpg"> 
+            <p>{{item.grados7}}</p>
+            <p>{{item.clima7}}</p>
+        </li>
+    
+        </div>
+    
+    </nav>

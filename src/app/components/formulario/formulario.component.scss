@@ -1,0 +1,41 @@
+#reg{
+    padding-left: 20px;
+}
+
+.grupoClima{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#clim{
+    padding: 30px;
+    margin: 15px;
+    list-style-type: none;
+}
+
+#clima li{
+    list-style-type: none;
+}
+
+#dia{
+    padding-left: 20px;
+}
+span{
+    font-size: 18px;
+}
+#tem{
+    padding: 30px;
+    margin: 15px;
+    list-style-type: none;
+}
+
+button{
+    border:5px;
+    border-color: black;
+    background-color:blanchedalmond;
+    
+}
+
+button:hover{
+    background-color: blue;
+}
